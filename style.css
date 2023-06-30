@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: yellowgreen;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images//bg.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    background-color: yellowgreen;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;/*dikey ortalama yapar*/
+}
+nav a img{
+    width: 150px;
+}
+.nav-links{
+    background-color: yellow;
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
