@@ -1,3 +1,19 @@
+:root{
+    /*Screen Pc*/
+    --text-color:white;
+    --box-bg-color:wheat;
+    --box-border-radius:10px;
+    --box-text-font-size:15px;
+    /*Tablet form*/
+    --tablet-text-color:gray;
+    /*Mobile Form*/
+    --mobile-text-color:white;
+    --mobile-text-font-size:14px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Varsayılan olarak gelen margin ve paddingleri 0 la*/
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +37,7 @@
 }
 .center-col{
     flex-basis: 30%;
-    border-radius: 10px;
+    border-radius:  var(--box-border-radius);
 }
 header{
     background-color: yellowgreen;
@@ -55,7 +71,7 @@ nav a img{
 }
 .nav-links ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     font-size: 15px;
 }
 .nav-links ul li a::after{
@@ -72,7 +88,7 @@ nav a img{
     transition: 0.3s;
 }
 .nav-links .bi{
-    color: white;
+    color:  var(--text-color);;
     font-size: 30px;
     display: none;
 }
@@ -87,7 +103,7 @@ nav a img{
     /* background-color: brown; */
     width: 90%;
     position: absolute;
-    color: white;
+    color:  var(--text-color);;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -106,8 +122,8 @@ nav a img{
     /* background-color: gold; */
     text-decoration: none;
     display: inline-block;
-    color: white;
-    border: 1px solid white;
+    color:  var(--text-color);;
+    border: 1px solid  var(--text-color);;
     padding: 10px 30px;
     background-color: transparent;
     position:relative;
@@ -229,7 +245,7 @@ nav a img{
 }
 .facilities-col img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: var(--box-border-radius);
 }
 .facilities-col p{
     margin:10px;
@@ -258,7 +274,7 @@ nav a img{
     width: 60px;
     height: 60px;
     border: double 0.3em transparent;
-    border-radius: 30px;
+    border-radius: 50%;
     background-image: linear-gradient(white, white), linear-gradient(to right, green, gold);
     background-origin: border-box;
     background-clip: content-box, border-box;
@@ -274,11 +290,11 @@ nav a img{
 .ua{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/london.jpeg);
     padding: 100px 0;
-    color: white;
+    color:  var(--text-color);;
     background-size: cover;
     background-position: center;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: var(--box-border-radius);
 }
 .ua h1{
     margin-bottom: 40px;
